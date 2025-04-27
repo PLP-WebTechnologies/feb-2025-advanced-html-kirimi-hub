@@ -1,28 +1,197 @@
-# Advanced HTML5 Elements and Forms
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Implementations</title>
+    <style>
+        /* Basic CSS for table styling and layout */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 50%;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <Header Section>
+    <header>
+        <h1>HTML5 Implementations</h1>
+    </header>
 
-## Objectives
-Implement HTML5 images, lists, tables, forms and input types.
-Use form validation attributes.
-Apply multimedia elements such as audio and video.
+    <main Content>
+    <main>
+        <Section 1:Ordered List>
+        <section>
+            <h2>Favorite Activities</h2>
+            <ol type="I">
+                <li>watching political drama series</li>
+                <li>driving</li>
+                <li>Hiking in Nature</li>
+                <li>Learning New Skills</li>
+                <li>Watching Documentaries</li>
+            </ol>
+        </section>
 
-## Instructions
+        <Section 2:External Image from Pexels>
+        <section>
+            <h2>Image from Pexels</h2>
+            <figure>
+                 <img src=https://images.pexels.com/photos/30326250/pexels-photo-30326250/free-photo-of-classic-car-driving-through-snowy-turkish-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="Classic Car Driving Through Snowy Turkish Mountains" width="400">
+                <figcaption>Classic Car Driving Through Snowy Turkish Mountains-Source:Pexels</figcaption>
+            </figure>
+        </section>
 
-- Create an index.html file.
-- Add an ordered list with roman numerals
-- Add an external image from pexels.com
-- Add a table of 5 contacts with; name, address, mobile and emails
-- Add a registration form
+        <Section 3:Table of 5 Contacts>
+        <section>
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>dennis kirimi</td>
+                        <td>01001 juja</td>
+                        <td>+254727818313</td>
+                        <td>denniskirimi2000@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>456 Oak Ave, Rivertown</td>
+                        <td>+234-555-0102</td>
+                        <td>bob.smith@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Clara Davis</td>
+                        <td>789 Pine Rd, Lakeside</td>
+                        <td>+27-555-0103</td>
+                        <td>clara.davis@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>David Brown</td>
+                        <td>101 Elm St, Hillview</td>
+                        <td>+256-555-0104</td>
+                        <td>david.brown@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Eva Wilson</td>
+                        <td>202 Birch Ln, Sunnyvale</td>
+                        <td>+1-555-0105</td>
+                        <td>eva.wilson@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
->[!NOTE]
->  The registration form should have:
->- Name, email, password, and date fields.
->- A dropdown, radio buttons, and checkboxes.
->- Proper labels and placeholders.
->- Required fields and validation attributes.
->- Ensure proper indentation and commenting.
- 
-# Tasks
-- Create a well-structured HTML5 document.
-- Ensure semantic correctness.
+        <Section 4:Registration Form with Validation>
+        <section>
+            <h2>Registration Form</h2>
+            <form action="/submit" method="post" novalidate>
+                <Fieldset for grouping related fields>
+                <fieldset>
+                    <legend>Personal Information</legend>
 
-Happy Coding! 💻✨
+                    <Name Field>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <Email Field>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <Password Field>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+
+                    <Date of Birth Field>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <Dropdown:Country Selection>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Select your country --</option>
+                        <option value="usa">kenya</option>
+                        <option value="canada">nigeria</option>
+                        <option value="uk">south africa</option>
+                        <option value="australia">uganda</option>
+                    </select>
+
+                    <Radio Buttons:Gender>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                    <Checkboxes:Interests>
+                    <label>Interests:</label>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </fieldset>
+
+                <Submit Button>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <Section 5:Multimedia Elements (Audio and Video) >
+        <section>
+            <h2>Multimedia Content</h2>
+
+            <!-- Audio Element -->
+            <h3>Sample Audio</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Video Element -->
+            <h3>Sample Video</h3>
+            <video controls width="600">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+
+    <Footer Section>
+    <footer>
+        <p>&copy;dennis kirimi.All rights reserved.</p>
+    </footer>
+</body>
+</html>
