@@ -176,14 +176,12 @@
             <h3>Sample Audio</h3>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
 
             <!-- Video Element -->
             <h3>Sample Video</h3>
             <video controls width="600">
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support the video element.
             </video>
         </section>
     </main>
